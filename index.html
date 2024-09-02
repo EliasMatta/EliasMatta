@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Elias Matta Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+					<!-- Intro -->
+					<div id="intro">
+						<h1>Elias Matta Portfolio</h1>
+						<p>Hi, I'm Elias I'm a Gameplay Programmer focused on Unreal Engine and C++ and Blueprints</p>
+						<ul class="actions">
+							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+					
+
+					<!-- Remove the Nav section -->
+				<!-- Main -->
+					<div id="main">
+						<!-- Projects Section -->
+						<h1 class="projects-title">Projects</h1>
+						<section class="projects">
+							<article class="project">
+								<div class="project-content">
+									<div class="video-container">
+										<iframe src="https://www.youtube.com/embed/mWMXkYKkwGk" title="Dark Subway Labyrinth - Gameplay Trailer"></iframe>
+									</div>
+									<div class="project-text">
+										<header>
+											<h2>Dark Subway Labyrinth</h2>
+										</header>
+										<p>Solo Project | 12 Weeks | Unreal Engine 5, Blueprints</p>
+										<p>
+											Dark Subway Labyrinth is a survival Horror Game that takes place in a abandoned subway station.
+											Players must try to Escape the Subway by solving puzzles and finding answers.
+										</p>
+										<p>My work included in this Project:</p>
+										<ul>
+											<li>Gameplay implementation, Item pickups, enemy interactions</li>
+											<li>Enemy AI navigation and behavior</li>
+											<li>Player HUD UI</li>
+											<li>Inventory System</li>
+											<li>Git repo management</li>
+											<li>Build and distribution</li>
+										</ul>
+									</div>
+								</div>
+							</article>
+						</section>
+
+						<head>
+							<meta charset="utf-8" />
+							<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+							<link rel="stylesheet" href="assets/css/main.css" />
+							<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+							<!-- Add React and ReactDOM scripts -->
+							<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+							<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+							<!-- Add Babel for JSX transformation -->
+							<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+							<!-- Add Tailwind CSS -->
+							<script src="https://cdn.tailwindcss.com"></script>
+						</head>
+								<!-- React Component -->
+								<div id="react-portfolio"></div>
+	
+							<!-- React Component Script -->
+							<script type="text/babel">
+								// Import statements are not needed in this context
+								const SkillSection = ({ title, skills }) => (
+									<div className="flex-1">
+										<h3 className="font-semibold mb-3 text-gray-700">{title}</h3>
+										<ul className="space-y-2">
+											{skills.map((skill, index) => (
+												<li key={index} className="text-sm text-gray-600">- {skill}</li>
+											))}
+										</ul>
+									</div>
+								);
+
+								const Portfolio = () => {
+									const skills = {
+										Languages: ['C++', 'C#'],
+										'Software/Tools': ['Unreal Engine 5', 'Unity','Visual Studio', 'Blueprints', 'Blender', 'Git/GitHub'],
+										Programming: ['Gameplay Systems and Features', 'Debugging'],
+										Core: ['Critical Thinking', 'Communication', 'Time Management'],
+									};
+					
+									return (
+										<div className="max-w-5xl mx-auto p-8 font-sans bg-white">
+											<h1 className="text-3xl font-bold mb-12 text-center text-gray-800">SKILLS</h1>
+											
+											<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+												{Object.entries(skills).map(([title, skillList]) => (
+													<SkillSection key={title} title={title} skills={skillList} />
+												))}
+											</div>
+											
+											<div className="mb-12 shadow-lg bg-white rounded-lg overflow-hidden">
+												<div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 p-8">
+													<img src="/api/placeholder/150/150" alt="Elias Matta" className="w-32 h-32 rounded-full object-cover shadow-md" />
+													<div>
+														<h2 className="text-2xl font-semibold mb-4 text-gray-800">About me</h2>
+														<p className="text-sm mb-3 text-gray-600 leading-relaxed">
+															I'm a graduate of CG Spectrum, where I studied games
+															programming with a focus on Unreal Engine and C++ with the guidance of the veterans.
+														</p>
+														<p className="text-sm mb-4 text-gray-600 leading-relaxed">
+															I have a Bachelor's Degree in Computer Systems In my free time I love to watch videos, and play
+															great games and also learn game development.
+														</p>
+													
+														
+														<p class="text-medium alt-font font-weight-400">Connect with me on <a class="text-deep-pink" href="https://www.linkedin.com/in/elias-h-matta/" target="_blank">LinkedIn</a></p>
+													</div>
+												</div>
+											</div>
+											
+											<footer className="text-center text-sm text-gray-500">
+												<p className="mb-2">© 2024 Elias Matta</p>
+												<div className="flex justify-center space-x-4">
+													<a href="https://github.com/EliasMatta?tab=repositories" className="text-gray-400 hover:text-gray-600 transition-colors">
+														<span className="sr-only">GitHub</span>
+														<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+															<path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+														</svg>
+													</a>
+													<a href="https://www.linkedin.com/in/elias-h-matta/" className="text-gray-400 hover:text-gray-600 transition-colors">
+														<span className="sr-only">LinkedIn</span>
+														<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+															<path fillRule="evenodd" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" clipRule="evenodd" />
+														</svg>
+													</a>
+												</div>
+											</footer>
+										</div>
+									);
+								};
+					
+								ReactDOM.render(<Portfolio />, document.getElementById('react-portfolio'));
+							</script>
+						</body>
+					</html>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
